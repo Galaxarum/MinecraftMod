@@ -14,12 +14,12 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/matteosecco/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "tech.matteosecco.ExampleMod"
+      "tech.matteosecco.MatteoSeccoUtils"
     ]
   },
   "mixins": [

@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 import tech.matteosecco.teleport_wand.TeleportWand;
 
 
-public class ExampleMod implements ModInitializer {
+public class MatteoSeccoUtils implements ModInitializer {
 
 	private static final String NAMESPACE = "matteosecco";
 	private static final FabricItemSettings WAND_SETTINGS = new FabricItemSettings()
@@ -18,8 +18,8 @@ public class ExampleMod implements ModInitializer {
 			.maxCount(1)
 			.maxDamage(0);
 
-	private static final Item WAND_BODY = new Item(new FabricItemSettings().group(ItemGroup.MISC).fireproof().maxDamage(0));
-	private static final Item MAGIC_WAND = new TeleportWand(WAND_SETTINGS);
+	public static final Item WAND_BODY = new Item(new FabricItemSettings().group(ItemGroup.MISC).fireproof().maxDamage(0));
+	public static final Item MAGIC_WAND = new TeleportWand(WAND_SETTINGS);
 
 	@Override
 	public void onInitialize() {
