@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    " B ",
+    "D  "
+  ],
+  "key": {
+    "B": {
+      "item": "matteosecco:wand_body"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "matteosecco:teleport_wand",
+    "count": 1
+  }
+}
