@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "matteoseccoutils",
+  "version": "${version}",
+
+  "name": "Matteo Secco utils",
+  "description": "Personal utilities",
+  "authors": [
+    "Matteo Secco"
+  ],
+  "contact": {
+    "homepage": "TODO",
+    "sources": "TODO"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "tech.matteosecco.ExampleMod"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
