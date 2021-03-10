@@ -62,6 +62,11 @@ public class TeleportWand extends Item {
 		return true;
 	}
 
+	@Override
+	public int getMaxUseTime(ItemStack stack) {
+		return 10;
+	}
+
 	private void setTeleportTarget(PlayerEntity player, ItemStack wand){
 		final Vec3d pos = player.getPos();
 		final CompoundTag target = wand.getOrCreateTag();
