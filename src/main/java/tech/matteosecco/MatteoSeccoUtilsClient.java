@@ -11,6 +11,7 @@ public class MatteoSeccoUtilsClient implements ClientModInitializer {
 			if(player == null || player.getActiveItem() != wand) return 0f;
 			return (wand.getMaxUseTime() - player.getItemUseTimeLeft())/20f;
 		});
-
+		FabricModelPredicateProviderRegistry.register(MatteoSeccoUtils.MAGIC_WAND, new Identifier("isCharging"),
+				(wand, clientWorld, player)-> player==null || !player.isUsingItem() || player.getActiveItem() != wand? 0f: 1f);
 	}
 }

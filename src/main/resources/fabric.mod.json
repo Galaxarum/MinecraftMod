@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "tech.matteosecco.MatteoSeccoUtils"
+    ],
+    "client": [
+      "tech.matteosecco.MatteoSeccoUtilsClient"
     ]
   },
   "mixins": [
